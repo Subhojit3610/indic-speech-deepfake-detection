@@ -29,6 +29,15 @@ Modern TTS systems produce speech that is hard to tell from a real voice, which 
 
 Validation ROC-AUC rose from 0.962 to 0.999 during training, and F1 reached about 0.99.
 
+## Dataset
+
+The data is publicly available on Hugging Face: [SherryT997/IndicTTS-Deepfake-Challenge-Data](https://huggingface.co/datasets/SherryT997/IndicTTS-Deepfake-Challenge-Data) (31,102 training clips with labels, 2,635 test clips, about 18 GB).
+
+```python
+from datasets import load_dataset
+dataset = load_dataset("SherryT997/IndicTTS-Deepfake-Challenge-Data")
+```
+
 ## Repository structure
 
 ```
